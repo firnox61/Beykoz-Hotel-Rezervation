@@ -1,2 +1,2 @@
 # Hotel-Management-System
-Scü internet programalama ödevi 
+Beykoz Üniversitesi Java Spring Boot Programlama Projesi
