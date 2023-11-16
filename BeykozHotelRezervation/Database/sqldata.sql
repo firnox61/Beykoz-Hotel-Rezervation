@@ -1,0 +1,16 @@
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('1', 'Ramada', '5');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('2', 'Sinpaş', '4');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('4', 'Dört mevsim Oteli', '3');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('5', 'Başkent Otel', '3');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('6', 'Broadmoor', '2');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('7', 'Sinpaş', '4');
+INSERT INTO hotel.hotel (`hotel_id`, `hotel_name`, `star_level`) VALUES ('3', 'Eroğlu', '3');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (1, 'Nostaljik hayranlarına', 0, 400, 5, 61, 'Epic Room');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (2, 'Boğaz manzaralı', 0, 380, 3, 50, 'Standart Room');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (3, 'Deniz manzaralı', 0, 250, 5, 35, 'Standart Room');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (4, 'Lüks oda', 0, 150, 4, 26, 'Premium Room');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (5, 'Doğa ile iç içe', 0, 130, 2, 44, 'Natural Room');
+INSERT INTO hotel.room (`id`, `description`, `is_reserved`, `price`, `roomcount`, `roomnumber`, `roomtype`) VALUES (6, 'Dağ manzaralı', 0, 200, 4, 80, 'Premium Room');
+INSERT INTO hotel.users (`id`, `email`, `is_admin`, `name`, `surname`, `tcnumber`, `telephonenumber`) VALUES ('1', 'Admin@gmail.com', 1, 'admin', 'hotel', '123', '5463289475');
+INSERT INTO hotel.users (`id`, `email`, `is_admin`, `name`, `surname`, `tcnumber`, `telephonenumber`) VALUES ('2', 'Enes@gmail.com', 0, 'Enes', 'Eroğlu', '123', '5247586761');
+INSERT INTO hotel.users (`id`, `email`, `is_admin`, `name`, `surname`, `tcnumber`, `telephonenumber`) VALUES ('3', 'Yusuf@gmail.com', 0, 'Yusuf', 'Yamaç', '123', '5647825361');

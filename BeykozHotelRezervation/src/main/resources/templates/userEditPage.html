@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{adminLayoutPage}"
+      layout:decorator="adminLayoutPage">
+<head>
+    <title>User Update Dashboard</title>
+
+</head>
+<body>
+
+<div layout:fragment="mycontent">
+
+    <!-- Create HTML registration form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <!-- success message -->
+                <div th:if="${param.success}">
+                    <div class="alert alert-info">You've successfully registered
+                        to our awesome app!
+                    </div>
+                </div>
+
+                <h1>Room Update</h1>
+
+                <form th:action="@{/admin/updateUser}" method="POST" th:object="${userModel}">
+
+                    <div class="form-group">
+                        <label> User Name </label>
+                        <input
+                                type="text"
+                                name="name"
+                                th:value="*{getName()}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+                    <div class="form-group">
+                        <label> User SurName </label>
+                        <input
+                                type="text"
+                                name="surName"
+                                th:value="*{getSurName()}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label> User Email </label>
+                        <input
+                                type="text"
+                                name="email"
+                                th:value="*{getEmail()}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+                    <div class="form-group">
+                        <label> User Tc Number </label>
+                        <input
+                                type="number"
+                                name="tcNumber"
+                                th:value="*{getTcNumber()}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+                    <div class="form-group">
+                        <label> User Telephone Number </label>
+                        <input
+                                type="number"
+                                name="telephoneNumber"
+                                th:value="*{getTelephoneNumber()}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input
+                                type="hidden"
+                                name="id"
+                                th:value="*{id}"
+                                class="form-control"
+                                required autofocus="autofocus"/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Update User</button>
+                        <span><a th:href="@{/admin/getUser}">Previous</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
